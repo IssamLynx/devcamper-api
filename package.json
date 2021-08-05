@@ -10,8 +10,10 @@
   "author": "Mohamed Issam Bakha",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "i": "^0.3.6",
     "mongoose": "^5.13.5",
     "mongose": "0.0.2-security",
     "morgan": "^1.10.0"
