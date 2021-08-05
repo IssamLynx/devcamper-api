@@ -15,6 +15,8 @@ const bootcamps=require('./routes/bootcamps');
 //Route files
 const app =express();
 
+//Body Parser
+app.use(express.json());
 //Mount routers
 app.use('/api/v1/bootcamps',bootcamps);
 
