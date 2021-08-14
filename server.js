@@ -4,6 +4,7 @@ const dotenv=require('dotenv');
 const colors=require('colors');
 const fileupload =require('express-fileupload');
 const errorHandler=require('./middleware/error');
+const cookieParser=require('cookie-parser');
 const connectDB = require('./config/db');
 
 //Load env vars
@@ -23,6 +24,8 @@ const app =express();
 //Body Parser
 app.use(express.json());
 
+//Cookie Parser
+app.use(cookieParser());
 //file uploading
 app.use(fileupload());
 app.use(express.static(path.join(__dirname,'public')));
