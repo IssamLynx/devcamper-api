@@ -17,7 +17,7 @@ exports.register=asyncHandler(async(req,res,next) =>{
       name,
       email,
       password,
-      role,
+      role
     });
   
     res.status(200).json({
